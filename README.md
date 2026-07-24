@@ -4,7 +4,7 @@
 
 Desarrollador Backend especializado en PHP para e‑commerce. Experiencia sólida en Laravel y WordPress (incluyendo integraciones con WooCommerce y enfoques headless). Diseño arquitecturas escalables, resilientes y orientadas a datos para tiendas online, con gestión avanzada de bases de datos y collations para entornos multi‑idioma y multi‑zona.
 
-[📄 CV](#) • [✉️ Contacto](mailto:galgustavo7@gmail.com) • [LinkedIn](http://www.linkedln.com/in/Gustavo-cruces/)
+[📄 CV](#) • [✉️ Contacto](mailto:galgustavo7@gmail.com) • [LinkedIn](https://www.linkedin.com/in/gustavo-cruces-galeno)
 
 ---
 
@@ -87,7 +87,7 @@ Si quieres que añada descripciones más detalladas, demos o badges (CI, coverag
 ## 📬 Contacto
 - GitHub: https://github.com/galgustavo7
 - Email: galgustavo7@gmail.com
-- LinkedIn: http://www.linkedln.com/in/Gustavo-cruces/
+- LinkedIn: https://www.linkedin.com/in/gustavo-cruces-galeno
 
 ---
 
