@@ -2,7 +2,7 @@
 
 ![avatar](https://avatars.githubusercontent.com/u/165847641?v=4)
 
-Desarrollador Backend especializado en PHP para e‑commerce. Experiencia sólida en Laravel y WordPress (incluyendo integraciones con WooCommerce y enfoques headless). Diseño arquitecturas escalables, resilientes y orientadas a datos para tiendas online, con gestión avanzada de bases de datos y collations para entornos multi‑idioma y multi‑zona.
+Desarrollador Backend especializado en PHP para e‑commerce. Experiencia sólida en Laravel y WordPress (incluyendo integraciones con WooCommerce y enfoques headless). Diseño arquitecturas escala[...] 
 
 [📄 CV](#) • [✉️ Contacto](mailto:galgustavo7@gmail.com) • [LinkedIn](https://www.linkedin.com/in/gustavo-cruces-galeno)
 
@@ -61,6 +61,22 @@ Desarrollador Backend especializado en PHP para e‑commerce. Experiencia sólid
 ---
 
 ## 📂 Proyectos (ordenados por fecha de creación, más recientes primero)
+
+- megaofertas — ⚡ Tienda de marketing de afiliados de Amazon con Laravel 13 — storefront moderna responsiva + panel admin con dashboard de estadísticas.  
+  Repo: https://github.com/galgustavo7/megaofertas  
+  Creado: 16 Sep 2026
+
+- windows-11-pc-de-bajos-recursos — Scripts y configuración para Windows 11 en equipos de bajos recursos.  
+  Repo: https://github.com/galgustavo7/windows-11-pc-de-bajos-recursos  
+  Creado: 05 Sep 2026
+
+- Marketing-de-afiliados — Desarrollo web programado en Laravel dedicada al marketing de afiliados amazon, arquitectura y cumplimiento de normas de Amazon Affiliates.  
+  Repo: https://github.com/galgustavo7/Marketing-de-afiliados  
+  Creado: 31 Jul 2026
+
+- afiliado-laravel — Página web desarrollada en Laravel para marketing de afiliados Amazon.  
+  Repo: https://github.com/galgustavo7/afiliado-laravel  
+  Creado: 28 Jul 2026
 
 - Techstore — Tienda MVC en PHP  
   Repo: https://github.com/galgustavo7/Techstore  
