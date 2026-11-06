@@ -1,0 +1,75 @@
+# ===== Dependencias =====
+node_modules/
+.pnp
+.pnp.js
+
+# ===== Variables de entorno =====
+.env
+.env.local
+.env.*.local
+backend/.env
+admin-web/.env
+admin-web/.env.local
+
+# ===== Builds =====
+dist/
+build/
+out/
+coverage/
+*.tsbuildinfo
+
+# ===== Logs =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== Backend: almacenamiento generado =====
+backend/storage/
+!backend/storage/.gitkeep
+
+# ===== Sistema / editores =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# ===== Flutter / Dart =====
+mobile/.dart_tool/
+mobile/.packages
+mobile/.pub-cache/
+mobile/.pub/
+mobile/build/
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/app/debug/
+mobile/android/app/profile/
+mobile/android/app/release/
+mobile/ios/.symlinks/
+mobile/ios/Pods/
+mobile/ios/Flutter/.last_build_id
+mobile/ios/Flutter/App.framework
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+mobile/ios/Flutter/Generated.xcconfig
+mobile/ios/Flutter/ephemeral/
+mobile/ios/Flutter/app.flx
+mobile/ios/Flutter/app.zip
+mobile/ios/Flutter/flutter_assets/
+mobile/ios/Flutter/flutter_export_environment.sh
+mobile/ios/ServiceDefinitions.json
+mobile/ios/Runner/GeneratedPluginRegistrant.*
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+
+# ===== Docker =====
+docker-compose.override.yml
