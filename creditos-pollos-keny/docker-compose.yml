@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  # ---------- Base transaccional ----------
+  mysql:
+    image: mysql:8.0
+    container_name: keny_mysql
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root_pass}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-keny_credits}
+      MYSQL_USER: ${MYSQL_USER:-keny_user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-keny_pass_2026}
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ['CMD', 'mysqladmin', 'ping', '-h', 'localhost', '-uroot', '-p${MYSQL_ROOT_PASSWORD:-root_pass}']
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks:
+      - keny_net
+
+  # ---------- Base analítica ----------
+  postgres:
+    image: postgres:15
+    container_name: keny_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${PG_USER:-keny_pg}
+      POSTGRES_PASSWORD: ${PG_PASSWORD:-keny_pg_pass}
+      POSTGRES_DB: ${PG_DATABASE:-keny_analytics}
+    ports:
+      - '5432:5432'
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ${PG_USER:-keny_pg} -d ${PG_DATABASE:-keny_analytics}']
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks:
+      - keny_net
+
+  # ---------- Administrador de BD (opcional) ----------
+  adminer:
+    image: adminer:latest
+    container_name: keny_adminer
+    restart: unless-stopped
+    depends_on:
+      - mysql
+      - postgres
+    ports:
+      - '8080:8080'
+    networks:
+      - keny_net
+
+volumes:
+  mysql_data:
+  pg_data:
+
+networks:
+  keny_net:
+    driver: bridge
