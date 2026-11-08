@@ -86,7 +86,6 @@ Desarrollador Backend especializado en PHP para e‑commerce. Experiencia sólid
   Repo: https://github.com/galgustavo7/galgustavo7  
   Creado: 04 Jun 2024
 
-Si quieres que añada descripciones más detalladas, demos o badges (CI, coverage) en cada repo, indícame cuáles y los actualizo.
 
 ---
 
